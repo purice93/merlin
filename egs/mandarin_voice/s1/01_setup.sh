@@ -53,7 +53,7 @@ echo "" >> $global_config_file
 echo "Voice=${voice_name}" >> $global_config_file
 echo "Labels=phone_align" >> $global_config_file
 echo "QuestionFile=questions-mandarin.hed" >> $global_config_file
-echo "Vocoder=WORLD" >> $global_config_file
+echo "Vocoder=world" >> $global_config_file
 echo "SamplingFreq=16000" >> $global_config_file
 echo "SilencePhone='sil'" >> $global_config_file
 echo "FileIDList=file_id_list.scp" >> $global_config_file

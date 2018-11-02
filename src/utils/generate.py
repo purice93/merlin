@@ -303,7 +303,7 @@ def wavgen_magphase(gen_dir, file_id_list, cfg, logger):
     import magphase as mp
 
     nfiles = len(file_id_list)
-    for nxf in xrange(nfiles):
+    for nxf in range(nfiles):
         filename_token = file_id_list[nxf]
         logger.info('Creating waveform for %4d of %4d: %s' % (nxf+1, nfiles, filename_token))
 
@@ -320,6 +320,7 @@ def generate_wav(gen_dir, file_id_list, cfg):
     logger = logging.getLogger("wav_generation")
 
     ## STRAIGHT or WORLD vocoders:
+    cfg.vocoder_type.upper()
     if (cfg.vocoder_type=='STRAIGHT') or (cfg.vocoder_type=='WORLD'):
         wavgen_straight_type_vocoder(gen_dir, file_id_list, cfg, logger)
 

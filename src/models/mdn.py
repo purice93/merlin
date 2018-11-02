@@ -37,7 +37,7 @@
 #  THIS SOFTWARE.
 ################################################################################
 
-###THEANO_FLAGS='cuda.root=/opt/cuda-5.0.35,mode=FAST_RUN,device=gpu0,floatX=float32,exception_verbosity=high' python dnn.py
+###THEANO_FLAGS='cuda.root=/opt/cuda-5.0.35,mode=FAST_RUN,device=cuda2,floatX=float32,exception_verbosity=high' python dnn.py
 """
 """
 import pickle

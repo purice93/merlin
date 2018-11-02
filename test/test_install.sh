@@ -41,7 +41,7 @@ echo " "
 # if [ $gpu_id -gt -1 ]; then
 #     echo "Running on GPU id=$gpu_id ..."
 # 
-#     THEANO_FLAGS="mode=FAST_RUN,device=gpu$gpu_id,"$MERLIN_THEANO_FLAGS
+#     THEANO_FLAGS="mode=FAST_RUN,device=cuda$gpu_id,"$MERLIN_THEANO_FLAGS
 #     export THEANO_FLAGS
 #     
 #     python -c 'import theano; theano.test()'

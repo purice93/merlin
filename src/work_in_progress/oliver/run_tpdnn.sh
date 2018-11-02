@@ -14,7 +14,7 @@ fi
 
 
 if [ $gpu_id -gt -1 ]; then
-    THEANO_FLAGS="cuda.root=/opt/cuda-5.0.35,mode=FAST_RUN,device=gpu$gpu_id,floatX=float32"
+    THEANO_FLAGS="cuda.root=/opt/cuda-5.0.35,mode=FAST_RUN,device=cuda$gpu_id,floatX=float32"
     export THEANO_FLAGS
     
     echo $CONFIG
